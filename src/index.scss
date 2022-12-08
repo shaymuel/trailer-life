@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Permanent+Marker&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+background-image: url('./assets/po-home-back.webp');
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Permanent Marker', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.accordion {
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 1px solid black;
+  text-align: left;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.panel {
+  padding: 20px 15px;
+  display: none;
+  overflow: hidden;
+}
+
+.hide {
+  display: none !important;
+}
+
+.selected {
+  border: 8px solid black;
+}
